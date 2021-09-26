@@ -28,8 +28,12 @@
   color: white;
 }
 
+.sub-text--small {
+  font-size: 18px;
+}
+
 .gradient-text {
-  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background: -webkit-linear-gradient(left, #e4651c 30%, #f35151 60%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -49,7 +53,7 @@
 }
 
 .connect-wallet-button {
-  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  background: -webkit-linear-gradient(left, #f35151, #e4651c);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
 }

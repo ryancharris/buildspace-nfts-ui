@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 12px 24px;
 }
 
 .header-container {
@@ -73,6 +74,31 @@
   color: white;
   font-size: 18px;
   font-weight: bold;
+}
+
+.last-minted {
+  background: white;
+  border: 1px solid #e4651c;
+  border-radius: 4px;
+  display: flex;
+  padding: 8px 12px;
+}
+
+.last-minted > p {
+  color: black;
+}
+
+.last-minted > p:first-of-type {
+  margin-right: 24px;
+}
+
+.last-minted > p:last-of-type {
+  text-align: center;
+}
+
+.content-container {
+  flex-grow: 2;
+  padding-top: 48px;
 }
 
 .footer-container {

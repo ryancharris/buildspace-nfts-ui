@@ -8,7 +8,7 @@ import myEpicNft from "./utils/MyEpicNFT.json";
 const TWITTER_HANDLE = "ryan_c_harris";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = "https://testnets.opensea.io/assets";
-const TOTAL_MINT_COUNT = 50;
+// const TOTAL_MINT_COUNT = 50;
 const CONTRACT_ADDRESS = "0xDB24bE6Fb6c5e4c6F3C165663203b02bBDA70B59";
 
 const App = () => {
@@ -19,6 +19,7 @@ const App = () => {
 
   useEffect(() => {
     checkIfWalletConnected();
+    // eslint-disable-next-line
   }, []);
 
   const checkIfWalletConnected = async () => {
@@ -179,7 +180,10 @@ const App = () => {
               <div className="last-minted">
                 <p className="sub-text sub-text--small">#{id}</p>
                 <p className="sub-text sub-text--small">
-                  <a href={`${OPENSEA_LINK}/${CONTRACT_ADDRESS}/${id}`}>
+                  <a
+                    href={`${OPENSEA_LINK}/${CONTRACT_ADDRESS}/${id}`}
+                    target="_blank"
+                  >
                     {`${CONTRACT_ADDRESS}/${id}`}
                   </a>
                 </p>

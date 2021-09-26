@@ -183,6 +183,7 @@ const App = () => {
                   <a
                     href={`${OPENSEA_LINK}/${CONTRACT_ADDRESS}/${id}`}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     {`${CONTRACT_ADDRESS}/${id}`}
                   </a>
